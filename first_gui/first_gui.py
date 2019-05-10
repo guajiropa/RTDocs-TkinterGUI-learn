@@ -3,7 +3,7 @@ AUTHOR      : Robert James Patterson
 DATE        : 05/09/19
 SYNOPSIS    : Work thru files for the 'Read The Docs' GUI programming with tkinter
 """
-from tkinter import Tk, Label, Button
+from tkinter import Tk, Label, Button, LEFT, RIGHT
 
 class MyFirstGUI:
     
@@ -11,14 +11,31 @@ class MyFirstGUI:
         self.master = master
         master.title("A simple GUI")
 
-        self.lblTitle = Label(master, text="This is my first OOP Tk GUI")
+        self.lblTitle = Label(master,
+                              bg='maroon',
+                              fg='white',
+                              font=('Helvetica', 24),
+                              text="This is my first OOP Tk GUI"
+                              )        
         self.lblTitle.pack()
 
-        self.btnGreet = Button(master, text='Greet', command=self.greet)
-        self.btnGreet.pack()
-
-        self.btnClose = Button(master, text='Close', command=master.quit)
-        self.btnClose.pack()
+        self.btnGreet = Button(master, 
+                               bg='black',
+                               fg='white',
+                               font=('Arial', 16),
+                               text='Greet', 
+                               command=self.greet
+                               )
+        self.btnGreet.pack(side=LEFT)
+        
+        self.btnClose = Button(master,
+                               bg='black',
+                               fg='white',
+                               font=('Arial', 16),
+                               text='Close', 
+                               command=master.quit
+                               )
+        self.btnClose.pack(side=RIGHT)
 
     def greet(self):
         
