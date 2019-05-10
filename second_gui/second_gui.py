@@ -14,7 +14,7 @@ class MyFirstGUI:
         "This is our first GUI!",
         "Actually, this is our second GUI.",
         "We've made it more interesting . . . ",
-        ". . . by making the label interactive.",
+        ". . . by making this label interactive.",
         "Go ahead, click on me again."
         ]
 
