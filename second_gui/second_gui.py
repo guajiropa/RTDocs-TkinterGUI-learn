@@ -37,7 +37,7 @@ class MyFirstGUI:
                                  )
         self.lblTitleBar.pack(fill='x')
 
-        # This is the label control that will respond to th click event.
+        # This is the label control that will respond to the click event.
         self.lblMessage = Label(master,
                                 bg = 'maroon',
                                 fg = 'white',
