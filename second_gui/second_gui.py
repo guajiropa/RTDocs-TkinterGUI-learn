@@ -13,10 +13,9 @@ class MyFirstGUI:
         "Actually, this is our second GUI.",
         "We've made it more interesting . . . ",
         ". . . by making the label interactive.",
-        "Go ahead, click on me again."
-        ]
+        "Go ahead, click on me again."]
 
-    def __int__(self, master):
+    def __init__(self, master):
         self.master = master
         master.title("A simple GUI")
 
@@ -24,13 +23,13 @@ class MyFirstGUI:
         self.label_text = StringVar()
         self.label_text.set(self.LABEL_TEXT[self.label_index])
 
-        self.lblTitleBar = Label(master, 
+        self.lblTitleBar = Label(master,
                                  bg = 'maroon',
                                  fg = 'white',
                                  font = ('Helvetica', 18),
                                  text = "This is the Python GUI called Tkinter!"
                                  )
-        self.lblTitleBar.pack()
+        self.lblTitleBar.pack(fill='x')
 
         self.lblMessage = Label(master,
                                 bg = 'maroon',
@@ -39,7 +38,7 @@ class MyFirstGUI:
                                 textvariable = self.label_text
                                 )
         self.lblMessage.bind('<Button-1>', self.cycle_label_text)
-        self.lblMessage.pack()
+        self.lblMessage.pack(fill='x')
 
         self.btnGreet = Button(master,
                                bg = 'black',
@@ -48,15 +47,17 @@ class MyFirstGUI:
                                text = "Greet",
                                command = self.greet
                                )
-        self.btnGreet.pack()
+        self.btnGreet.pack(fill='x')
 
         self.btnClose = Button(master,
                                bg = 'black',
                                fg = 'white',
                                font = ('Times', 12),
-                               text = "Greet",
+                               text = "Close",
                                command = master.quit
                                )
+        self.btnClose.pack(fill='x')
+
 
     def greet(self):
 

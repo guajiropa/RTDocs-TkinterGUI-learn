@@ -10,7 +10,7 @@ class MyFirstGUI:
     def __init__(self, master):
         self.master = master
         master.title("A simple GUI")
-
+        """
         self.lblTitle = Label(master,
                               bg='maroon',
                               fg='white',
@@ -18,7 +18,7 @@ class MyFirstGUI:
                               text="This is my first OOP Tk GUI"
                               )        
         self.lblTitle.pack()
-
+        
         self.btnGreet = Button(master, 
                                bg='black',
                                fg='white',
@@ -36,11 +36,11 @@ class MyFirstGUI:
                                command=master.quit
                                )
         self.btnClose.pack(side=RIGHT)
-
+        
     def greet(self):
         
         self.lblTitle.config(text="Welcome, Bitches!!")
-
+        """
 
 root = Tk()
 win = MyFirstGUI(root)
