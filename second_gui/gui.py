@@ -3,7 +3,7 @@ AUTHOR      : Robert James Patterson
 DATE        : 05/09/19
 SYNOPSIS    : Work thru files for the 'Read The Docs' GUI programming with tkinter
 """
-from tkinter import Tk, Label, Button, StringVar
+from tkinter import Label, Button, StringVar
 
 
 class MyFirstGUI:
@@ -81,8 +81,3 @@ class MyFirstGUI:
         self.label_index %= len(self.LABEL_TEXT) # wrap around
         self.label_text.set(self.LABEL_TEXT[self.label_index])
         
-
-# Run the app, pass in the Tk object to the constructor.
-root = Tk()
-win = MyFirstGUI(root)
-root.mainloop()

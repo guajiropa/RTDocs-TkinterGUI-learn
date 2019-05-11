@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7dded0ca-ca94-4e67-9367-b09e174e39c1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>second_gui.py</StartupFile>
+    <StartupFile>gui.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="second_gui.py" />
+    <Compile Include="main.pyw">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gui.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
