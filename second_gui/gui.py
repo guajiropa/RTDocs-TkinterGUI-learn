@@ -72,7 +72,7 @@ class MyNewGUI:
     # This is the method used to change the text in the Title label.
     def greet(self):
 
-        self.lblTitleBar.config(text = "Howdy, Bitches!! Welcome to the Mothership!")
+        self.lblTitleBar.config(text="Howdy, Bitches!! Welcome to the Mothership!")
     
     # This is the method to handle cycling thru our list of strings to be displayed. 
     def cycle_label_text(self, event):
@@ -80,4 +80,3 @@ class MyNewGUI:
         self.label_index += 1
         self.label_index %= len(self.LABEL_TEXT) # wrap around
         self.label_text.set(self.LABEL_TEXT[self.label_index])
-        
