@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "first_gui", "first_gui\firs
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "second_gui", "second_gui\second_gui.pyproj", "{7DDED0CA-CA94-4E67-9367-B09E174E39C1}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "HelloLabels", "HelloLabels\HelloLabels.pyproj", "{4A4BC567-D96B-442B-9125-C49D23D1DA75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,8 @@ Global
 		{027BAF8E-87F0-49B0-93E9-F08177C519BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DDED0CA-CA94-4E67-9367-B09E174E39C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7DDED0CA-CA94-4E67-9367-B09E174E39C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4BC567-D96B-442B-9125-C49D23D1DA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4BC567-D96B-442B-9125-C49D23D1DA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

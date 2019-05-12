@@ -1,3 +1,8 @@
+"""
+AUTHOR      : Robert James Patterson
+DATE        : 05/09/19
+SYNOPSIS    : Work thru files for the 'Read The Docs' GUI programming with tkinter
+"""
 from tkinter import Tk
 from gui import MyNewGUI
 
