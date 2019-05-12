@@ -24,6 +24,9 @@
   <ItemGroup>
     <Compile Include="logo_msg.pyw" />
     <Compile Include="main.pyw" />
+    <Compile Include="many_fonts.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
