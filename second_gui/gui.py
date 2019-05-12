@@ -6,7 +6,7 @@ SYNOPSIS    : Work thru files for the 'Read The Docs' GUI programming with tkint
 from tkinter import Label, Button, StringVar
 
 
-class MyFirstGUI:
+class MyNewGUI:
 
     # This member variable (field) is our list of strings for the click event 
     # wired up to the lblMessage control.
