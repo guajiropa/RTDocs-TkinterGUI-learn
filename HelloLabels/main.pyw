@@ -5,12 +5,12 @@ SYNOPSIS    : Work thru files for the Tkinter Tutorial at www.python-coures.edu
 """
 from tkinter import Tk, Label, BOTH
 
-win = Tk()
+root = Tk()
 
-lblHello = Label(win, 
-                 bg='navy blue', 
+lblHello = Label(root, 
+                 bg='black', 
                  fg='light pink',
-                 font=('Helvetica', 20),
+                 font=('Helvetica', 40),
                  text="Howdy, Bitches!!"
                  )
 lblHello.pack(fill=BOTH)
@@ -18,4 +18,4 @@ lblHello.pack(fill=BOTH)
 
 if __name__ == "__main__":
     
-    win.mainloop()
+    root.mainloop()
